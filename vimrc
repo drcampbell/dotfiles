@@ -57,7 +57,7 @@ filetype plugin indent on    " required
 
 syntax enable
 set tabstop=4
-set number
+set relativenumber
 set cursorline
 set showmatch
 set incsearch 	" incremental search
