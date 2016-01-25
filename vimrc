@@ -65,6 +65,8 @@ set incsearch 	" incremental search
 set hlsearch 	"highlight matches
 let g:vim_markdown_folding_disabled = 1
 colorscheme monokai
+set laststatus=2
+set colorcolumn=80
 
 set mouse=a
 let g:airline_powerline_fonts = 1
