@@ -8,7 +8,7 @@
 
 dir=~/dotfiles		# dotfiles dir
 olddir=~/dotfiles_old	# backup directory
-files="vimrc" 	# list of files/folders to symlink in home
+files="vimrc gitconfig" 	# list of files/folders to symlink in home
 
 ### Create Dotfiles_old in Homedir ###
 echo "Creating $olddir for backup of any existing dotfiles in ~"

@@ -68,6 +68,12 @@ colorscheme monokai
 set laststatus=2
 set colorcolumn=80
 
+" Buffer shortcuts! 
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
 set mouse=a
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
