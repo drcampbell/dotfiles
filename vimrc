@@ -57,6 +57,7 @@ filetype plugin indent on    " required
 
 syntax enable
 set tabstop=2
+set shiftwidth=2
 set relativenumber
 set number
 set cursorline
