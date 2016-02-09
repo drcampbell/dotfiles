@@ -56,7 +56,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable
-set tabstop=4
+set tabstop=2
+set shiftwidth=2
 set relativenumber
 set number
 set cursorline
