@@ -74,17 +74,22 @@ colorscheme monokai
 set laststatus=2
 set colorcolumn=80
 
+" Terminal settings
+hi Normal ctermbg=none
+highlight NonText ctermbg=none
+
 " Buffer shortcuts! 
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
+
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-
 set mouse=a
+" Airline Settings
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
