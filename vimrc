@@ -24,6 +24,7 @@ Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'othree/html5.vim'
 
 " Vim Colorschemes
 Plugin 'tomasr/molokai'
@@ -95,4 +96,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 set noshowmode
-
+if $VIM_CRONTAB == "true"
+	set nobackup
+	set nowritebackup
+endif
