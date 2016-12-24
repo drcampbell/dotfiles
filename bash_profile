@@ -1,6 +1,10 @@
+#!/bin/bash
 #~/.bash_profile
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
+
+# Initialize RBENV
+eval "$(rbenv init -)"
 
 if [[ $OSTYPE == "linux-gnu" ]]; then
 	# Load the default .profile
@@ -21,5 +25,25 @@ elif [[ $OSTYPE == "darwin"* ]]; then
 \[\033[01;31m\]\$ \[\033[m\]"
 	# Make ls command perdy
 	export CLICOLOR=1
-	export LSCOLORS=EaFxCxDxBxegedabagacad
+	export LSCOLORS=exFxCxDxBxegedabagacad
 fi
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+#->RUBY ENV<-#
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Python3 Bpython
+alias bpy3="python3 -m bpython"
+
+alias vim="/usr/local/Cellar/vim/7.4.1147/bin/vim"
+
+# Add node.js to PATH
+export PATH="$HOME/.node/bin:$PATH"
+
+NPM_PACKAGES=/Users/david/.npm-packages
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+PATH="$NPM_PACKAGES/bin:$PATH"
+
+export PATH="/usr/local/sbin:$PATH"
+export TERM="xterm-256color"
