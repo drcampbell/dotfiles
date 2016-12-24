@@ -22,7 +22,7 @@ elif [[ $OSTYPE == "darwin"* ]]; then
 \[\033[00m\]: \
 \[\033[00;34m\] \w \[\033[00m\]\
 \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]
-\[\033[01;31m\]\$ \[\033[m\]"
+\[\033[01;31m\]λ \[\033[m\]"
 	# Make ls command perdy
 	export CLICOLOR=1
 	export LSCOLORS=exFxCxDxBxegedabagacad
@@ -46,4 +46,6 @@ NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 PATH="$NPM_PACKAGES/bin:$PATH"
 
 export PATH="/usr/local/sbin:$PATH"
+alias crontab="VIM_CRONTAB=true crontab"
+
 export TERM="xterm-256color"

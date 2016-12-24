@@ -1,11 +1,17 @@
 [user]
 	name = David Campbell
-	email = d.cam09@gmail.com
+	email = dcampbell@chepri.com
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [core]
 	editor = vim
+	repositoryformatversion = 0
+	filemode = true  
+	bare = false  
+	logallrefupdates = true  
+	ignorecase = true  
+	precomposeunicode = false 
 [color]
 	status = auto
 	branch = auto
@@ -18,6 +24,7 @@
 	st = status
 	unstage = reset HEAD --
 	last = log -1 HEAD
+	loggins = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [push]
 	default = simple
 [credential]

@@ -1,3 +1,4 @@
 *.swo
 *.swp
 git-completion.bash
+.DS_Store
