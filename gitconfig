@@ -1,6 +1,6 @@
 [user]
 	name = David Campbell
-	email = dcampbell@chepri.com
+	email = david.campbell@priorauthnow.com
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
@@ -29,3 +29,4 @@
 	default = simple
 [credential]
 	helper = osxkeychain
+	helper = !/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/bin/java -Ddebug=false -Djava.net.useSystemProxies=true -jar /usr/local/Cellar/git-credential-manager/2.0.3/libexec/git-credential-manager-2.0.3.jar

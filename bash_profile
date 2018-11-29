@@ -29,6 +29,7 @@ elif [[ $OSTYPE == "darwin"* ]]; then
 fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 #->RUBY ENV<-#
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
